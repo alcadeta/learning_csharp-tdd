@@ -6,16 +6,10 @@ namespace Calculator
     {
         private const int HOURS_IN_A_YEAR = 2080;
 
-        public decimal GetAnnualSalary(decimal hourlyWage)
-        {
-            var annualSalary = hourlyWage * HOURS_IN_A_YEAR;
-            return annualSalary;
-        }
+        public decimal GetAnnualSalary(decimal hourlyWage) =>
+            hourlyWage * HOURS_IN_A_YEAR;
 
-        public decimal GetHourlyWage(decimal annualSalary)
-        {
-            var hourlyWage = annualSalary / HOURS_IN_A_YEAR;
-            return hourlyWage;
-        }
+        public decimal GetHourlyWage(decimal annualSalary) =>
+            annualSalary / HOURS_IN_A_YEAR;
     }
 }
