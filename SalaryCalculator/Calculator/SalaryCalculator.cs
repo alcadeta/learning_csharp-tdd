@@ -11,5 +11,11 @@ namespace Calculator
             var annualSalary = hourlyWage * HOURS_IN_A_YEAR;
             return annualSalary;
         }
+
+        public static decimal GetHourlySalary(decimal annualSalary)
+        {
+            var hourlyWage = annualSalary / HOURS_IN_A_YEAR;
+            return 0;
+        }
     }
 }
