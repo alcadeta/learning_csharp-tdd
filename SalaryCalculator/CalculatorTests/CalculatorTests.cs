@@ -13,7 +13,7 @@ namespace CalculatorTests
             var sc = new SalaryCalculator();
 
             // 2. Act
-            var annualSalary = SalaryCalculator.GetAnnualSalary(50);
+            var annualSalary = sc.GetAnnualSalary(50);
 
             // 3. Assert
             Assert.AreEqual(104000, annualSalary);
@@ -26,10 +26,10 @@ namespace CalculatorTests
             var sc = new SalaryCalculator();
 
             // 2. Act
-            var hourlyWage = SalaryCalculator.GetHourlySalary(104000);
+            var hourlyWage = sc.GetHourlyWage(52000);
 
             // 3. Assert
-            Assert.AreEqual(50, hourlyWage);
+            Assert.AreEqual(25, hourlyWage);
         }
     }
 }
